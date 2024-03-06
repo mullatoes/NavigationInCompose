@@ -23,14 +23,14 @@ fun MyNavigation() {
 
     val navController = rememberNavController()
     NavHost(
-        navController = navController, startDestination = Home.route)
+        navController = navController, startDestination = HomeScreen.route)
     {
-        composable(Home.route){
+        composable(HomeScreen.route){
             HomeScreen(navController)
         }
 
-        composable(MenuList.route){
-            MenuListScreen()
+        composable(DetailsScreen.route){
+            DetailsScreen()
         }
     }
 }
